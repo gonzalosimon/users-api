@@ -1,0 +1,16 @@
+[
+      {
+            "id": "1",
+            "name": "Paul",
+            "lastName": "Johnson",
+            "birthday": "August 20th",
+            "DNI": "23929233" 
+      },
+      {
+            "id": "2",
+            "name": "Tom",
+            "lastName": "Carlson",
+            "birthday": "May 12th",
+            "DNI": "21239233" 
+      }
+]
