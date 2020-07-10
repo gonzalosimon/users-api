@@ -14,23 +14,9 @@ app.use(express.json());
 
 // routes
 app.use(require('./routes/index'));
-app.use(require('./routes/users'));
+app.use('/api/users', require('./routes/users'));
 
 // starting the server
 app.listen(app.get('port'), () => {
       console.log(`Server on port ${app.get('port')}`);
 });
-
-const { Router } = require('express');
-const router = Router();
-
-router.get('/test', (req, res) => {
-      const data = {
-            "name": "Simonito",
-            "surname":"Fazt"
-      };
-      res.json(data);
-});
-
-
-module.exports = router;
